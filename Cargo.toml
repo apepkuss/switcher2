@@ -1,7 +1,7 @@
 [package]
 description = "Lightweight userland context switches"
 edition = "2021"
-exclude = ["benches/", "examples/", "tests/"]
+exclude = ["examples/", "tests/"]
 license = "Apache-2.0/MIT"
 name = "switcher2"
 readme = "Readme.md"
