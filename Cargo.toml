@@ -1,0 +1,22 @@
+[package]
+description = "Lightweight userland context switches"
+edition = "2021"
+exclude = ["benches/", "examples/", "tests/"]
+license = "Apache-2.0/MIT"
+name = "switcher2"
+readme = "Readme.md"
+repository = "https://github.com/apepkuss/switcher2.git"
+version = "0.1.0"
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+[target.'cfg(windows)'.dependencies]
+winapi = {version = "0.3", features = ["winbase", "memoryapi", "errhandlingapi"]}
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+harness = false
+name = "switcher2_benchmark"
