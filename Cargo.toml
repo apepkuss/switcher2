@@ -4,7 +4,7 @@ edition = "2021"
 exclude = ["examples/", "tests/"]
 license = "Apache-2.0/MIT"
 name = "switcher2"
-readme = "Readme.md"
+readme = "README.md"
 repository = "https://github.com/apepkuss/switcher2.git"
 version = "0.1.0"
 
